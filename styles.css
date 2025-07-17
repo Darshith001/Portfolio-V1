@@ -1,0 +1,157 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: #f8f8f8;
+    color: #222;
+}
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding: 30px 0 10px 0;
+}
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.5em;
+}
+header p {
+    margin: 0 0 20px 0;
+    font-size: 1.2em;
+    color: #bbb;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: #ff9800;
+}
+main {
+    background: #fff;
+    box-shadow: 0 0 10px #ddd;
+    border-radius: 8px;
+    margin-top: -20px;
+}
+section {
+    margin-bottom: 40px;
+}
+.profile-pic {
+    max-width: 140px;
+    border-radius: 50%;
+    display: block;
+    margin: 15px 0;
+}
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+.project {
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 15px;
+    box-shadow: 0 2px 6px #eee;
+}
+.project img {
+    max-width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ff9800;
+    text-decoration: none;
+    font-weight: bold;
+}
+.project-link:hover {
+    text-decoration: underline;
+}
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+.skills-list li {
+    background: #ff9800;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 1em;
+}
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+}
+#contact-form input, #contact-form textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+#contact-form button {
+    background: #ff9800;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: bold;
+}
+#contact-form button:hover {
+    background: #e67c00;
+}
+.social-links {
+    margin-top: 18px;
+}
+.social-links a {
+    display: inline-block;
+    margin-right: 16px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+.social-links a:hover {
+    color: #ff9800;
+}
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    font-size: 0.95em;
+}
+@media (max-width: 600px) {
+    .container {
+        width: 98%;
+        padding: 20px 0;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .projects-list {
+        grid-template-columns: 1fr;
+    }
+}
